@@ -196,7 +196,7 @@ QuerysAutoClicker was not designed like other AutoClickers from the web - it can
     Installer</i>)
    </p>
 2. <p style="text-align: justify;">
-   <a href="https://api.github.com/repos/getQueryString/QuerysAutoClicker/releases/">Download the latest version of QuerysAutoClicker</a>, navigate to "\QuerysAutoClicker\lib\" and run the <i >QuerysAutoClicker-1.0.0.jar</i> file.
+   <a href="https://github.com/getQueryString/QuerysAutoClicker/releases">Download the latest version of QuerysAutoClicker</a>, navigate to "\QuerysAutoClicker\lib\" and run the <i >QuerysAutoClicker-1.0.0.jar</i> file.
    </p>
 
 ## Compatibility
