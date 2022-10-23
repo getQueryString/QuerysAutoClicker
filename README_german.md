@@ -5,7 +5,7 @@
 # QuerysAutoClicker
 
 - **[English version](https://github.com/getQueryString/QuerysAutoClicker/blob/master/README.md)**
-- [Unser QuerysCommunity Discord-Server](https://discord.gg/AeGFarvQyk)
+- [Unser QueryCommunity Discord-Server](https://discord.gg/AeGFarvQyk)
 
 ## Inhaltsverzeichnis
 
