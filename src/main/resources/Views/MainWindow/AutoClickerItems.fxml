@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="164.0" prefWidth="720.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.github.gqs.querysautoclicker.Controller.AutoClickerItemsController">
+
+
+    <Label fx:id="labelAutoClicker" layoutX="326.0" layoutY="14.0" text="AutoClicker" underline="true">
+        <font>
+            <Font name="System Bold" size="12.0" />
+        </font>
+    </Label>
+    <Label fx:id="labelSettings" layoutX="15.0" layoutY="54.0" text="Settings" underline="true" />
+    <Label fx:id="labelClickType" layoutX="20.0" layoutY="78.0" text="Click type:" />
+    <ChoiceBox fx:id="choiceBoxClickType" layoutX="100.0" layoutY="73.0" prefHeight="25.0" prefWidth="90.0">
+    </ChoiceBox>
+    <Label fx:id="labelKey" layoutX="358.0" layoutY="54.0" text="Key" underline="true" />
+    <RadioButton fx:id="radioButtonMouseKey" layoutX="349.0" layoutY="78.0" mnemonicParsing="false" onAction="#useMouseKey" text="Mouse:">
+    </RadioButton>
+    <ChoiceBox fx:id="choiceBoxMouseKey" layoutX="425.0" layoutY="73.0" prefHeight="25.0" prefWidth="120.0">
+    </ChoiceBox>
+    <RadioButton fx:id="radioButtonF5" layoutX="560.0" layoutY="78.0" mnemonicParsing="false" onAction="#useF5" text="F5">
+    </RadioButton>
+    <Label fx:id="labelPosition" layoutX="20.0" layoutY="112.0" text="Position:" />
+    <Button fx:id="buttonPickClickPosition" layoutX="100.0" layoutY="110.0" mnemonicParsing="false" onAction="#pickClickPosition" prefHeight="24.0" text="Pick">
+    </Button>
+    <Label fx:id="labelPositionX" layoutX="193.0" layoutY="117.0" text="x:" />
+    <TextField fx:id="textFieldPositionXCoordinate" layoutX="205.0" layoutY="113.0" prefWidth="65.0" promptText="x-coord.">
+    </TextField>
+    <Label fx:id="labelPositionY" layoutX="280.0" layoutY="117.0" text="y:" />
+    <TextField fx:id="textFieldPositionYCoordinate" layoutX="292.0" layoutY="113.0" prefWidth="65.0" promptText="y-coord.">
+    </TextField>
+    <CheckBox fx:id="checkBoxHoldClick" layoutX="205.0" layoutY="78.0" mnemonicParsing="false" onAction="#holdClick" text="Hold">
+    </CheckBox>
+
+</AnchorPane>

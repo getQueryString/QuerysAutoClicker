@@ -1,0 +1,174 @@
+/* MainWindow */
+#mainAnchorPane {
+ -fx-font-family: "Calibri";
+}
+
+#mainHBox {
+ -fx-background-color: linear-gradient(to top left, white 0%, #D4D4D4 75%);
+}
+
+#mainMenuBar {
+ -fx-font-size: 12;
+}
+
+#mainLabelWindowTitle {
+ -fx-font-weight: bold;
+ -fx-font-size: 14;
+}
+
+#buttonStart, #buttonStop {
+ -fx-background-color: "#E0F0FD";
+ -fx-font-weight: bold;
+ -fx-font-size: 13;
+}
+
+#buttonPickClickPosition, #buttonResetOptions, #buttonResetAutoClicker, #buttonResetAutoText {
+ -fx-background-color: "#E0F0FD";
+ -fx-font-weight: bold;
+ -fx-font-size: 12;
+}
+
+/* Container */
+#choiceBoxClickType,
+#choiceBoxMouseKey,
+#choiceBoxReplaceOptions,
+#textFieldStartHotkey,
+#textFieldStartIntervalDays,
+#textFieldStartIntervalHours,
+#textFieldStartIntervalMinutes,
+#textFieldStartIntervalSeconds,
+#textFieldQuantity,
+#textFieldDurationDays,
+#textFieldDurationHours,
+#textFieldDurationMinutes,
+#textFieldDurationSeconds,
+#textFieldSpeed,
+#textFieldIntervalDays,
+#textFieldIntervalHours,
+#textFieldIntervalMinutes,
+#textFieldIntervalSeconds,
+#textFieldIntervalMilliseconds,
+#textFieldPositionXCoordinate,
+#textFieldPositionYCoordinate {
+ -fx-background-color: white;
+}
+
+/* Checkbox */
+#checkBoxStartHotkey .box, #checkBoxHoldClick .box, #checkBoxPasteText .box, #checkBoxPasteTextLineForLine .box {
+  -fx-background-color: white;
+}
+
+#checkBoxStartHotkey:selected .mark, #checkBoxHoldClick:selected .mark, #checkBoxPasteText:selected .mark, #checkBoxPasteTextLineForLine:selected .mark {
+  -fx-background-color: white;
+}
+
+#checkBoxStartHotkey:selected .box, #checkBoxHoldClick:selected .box, #checkBoxPasteText:selected .box, #checkBoxPasteTextLineForLine:selected .box {
+  -fx-background-color: green;
+}
+
+/* RadioButton */
+#radioButtonAutoClicker .radio, #radioButtonAutoClicker:selected .radio,
+#radioButtonAutoText .radio, #radioButtonAutoText:selected .radio,
+#radioButtonQuantity .radio, #radioButtonQuantity:selected .radio,
+#radioButtonDuration .radio, #radioButtonDuration:selected .radio,
+#radioButtonHoldHotkey .radio, #radioButtonHoldHotkey:selected .radio,
+#radioButtonSpeed .radio, #radioButtonSpeed:selected .radio,
+#radioButtonInterval .radio, #radioButtonInterval:selected .radio,
+#radioButtonMouseKey .radio, #radioButtonMouseKey:selected .radio,
+#radioButtonF5 .radio, #radioButtonF5:selected .radio {
+ -fx-border-width: 1px;
+ -fx-background-color: white;
+ -fx-border-radius: 15px;
+ -fx-padding: 3px;
+}
+
+#radioButtonAutoClicker .dot {
+ -fx-background-radius: 15px;
+ -fx-padding: 4px;
+}
+
+/* Copied to clipboard label */
+#labelRecommendQAC{
+ -fx-padding: 6px;
+ -fx-font-size: 22px;
+ -fx-font-weight: bold;
+ -fx-font-family: Calibri;
+ -fx-background-color: #fff;
+ -fx-background-radius: 7px
+}
+
+#buttonStart,
+#buttonStop,
+#buttonPickClickPosition,
+#checkBoxPasteText,
+#checkBoxPasteTextLineForLine,
+#checkBoxStartHotkey,
+#choiceBoxClickType,
+#choiceBoxMouseKey,
+#choiceBoxReplaceOptions,
+#choiceBoxClickType .label,
+#choiceBoxMouseKey .label,
+#choiceBoxReplaceOptions .label,
+#labelPartingLineUpper,
+#labelPartingLineLower,
+#labelOptions,
+#labelStartInterval,
+#labelStartIntervalDays,
+#labelStartIntervalHours,
+#labelStartIntervalMinutes,
+#labelStartIntervalSeconds,
+#labelDurationDays,
+#labelDurationHours,
+#labelDurationMinutes,
+#labelDurationSeconds,
+#labelAutoSpeed,
+#labelIntervalDays,
+#labelIntervalHours,
+#labelIntervalMinutes,
+#labelIntervalSeconds,
+#labelIntervalMilliseconds,
+#labelAutoClicker,
+#labelSettings,
+#labelClickType,
+#checkBoxHoldClick,
+#labelPosition,
+#labelPositionX,
+#labelPositionY,
+#labelKey,
+#labelAutoText,
+#labelAutoTextReplace,
+#labelAutoTextInputCharCount,
+#radioButtonHoldHotkey,
+#radioButtonSpeed,
+#radioButtonAutoClicker,
+#radioButtonAutoText,
+#radioButtonQuantity,
+#radioButtonDuration,
+#radioButtonInterval,
+#radioButtonMouseKey,
+#radioButtonF5,
+#textFieldStartHotkey,
+#textFieldStartIntervalDays,
+#textFieldStartIntervalHours,
+#textFieldStartIntervalMinutes,
+#textFieldStartIntervalSeconds,
+#textFieldQuantity,
+#textFieldDurationDays,
+#textFieldDurationHours,
+#textFieldDurationMinutes,
+#textFieldDurationSeconds,
+#textFieldSpeed,
+#textFieldIntervalDays,
+#textFieldIntervalHours,
+#textFieldIntervalMinutes,
+#textFieldIntervalSeconds,
+#textFieldIntervalMilliseconds,
+#textFieldPositionXCoordinate,
+#textFieldPositionYCoordinate {
+ -fx-text-fill: black;
+}
+
+#textFieldPositionXCoordinate,
+#textFieldPositionYCoordinate {
+ -fx-focus-decoration: none;
+}

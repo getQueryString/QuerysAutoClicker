@@ -1,0 +1,20 @@
+/* ContributorsWindow */
+#contributorsAnchorPane {
+  -fx-background-color: linear-gradient(to top left, black 15%, red 85%);
+}
+
+#contributorsHBox {
+  -fx-background-color: linear-gradient(to top left, #D4D4D4 15%, white 85%);
+}
+
+#contributorsLabelWindowTitle {
+  -fx-font-weight: bold;
+  -fx-font-size: 13;
+  -fx-font-family: "Calibri";
+}
+
+/* Text who programmed QAC */
+#contributorsLabelProgrammedBy {
+  -fx-font-family: "Courier New";
+  -fx-background-color: "black";
+}

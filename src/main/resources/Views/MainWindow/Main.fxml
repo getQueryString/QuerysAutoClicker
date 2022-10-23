@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckMenuItem?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.RadioMenuItem?>
+<?import javafx.scene.control.SeparatorMenuItem?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="mainAnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="647.0" prefWidth="720.0" stylesheets="@../../Style/MainWindow/MainWindow.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.github.gqs.querysautoclicker.Controller.MainController">
+
+    <AnchorPane layoutY="25.0">
+        <fx:include fx:id="optionsAnchorPane" source="OptionsItems.fxml" />
+        <Label fx:id="labelRecommendQAC" focusTraversable="false" layoutX="414.0" layoutY="13.0" mouseTransparent="true" text="Copied!" visible="false" />
+    </AnchorPane>
+
+    <AnchorPane layoutY="232.0">
+        <fx:include fx:id="autoClickerAnchorPane" source="AutoClickerItems.fxml" />
+    </AnchorPane>
+
+    <AnchorPane layoutY="395.0">
+        <fx:include fx:id="autoTextAnchorPane" source="AutoTextItems.fxml" />
+      <Label fx:id="labelErrorMessage" layoutX="100.0" layoutY="217.0" visible="false">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+    </AnchorPane>
+
+    <Button fx:id="buttonStart" layoutX="10.0" layoutY="36.0" mnemonicParsing="false" onAction="#startQuerysAutoClicker" prefHeight="35.0" prefWidth="75.0" text="Start">
+        <cursor>
+            <Cursor fx:constant="HAND" />
+        </cursor>
+    </Button>
+    <Button fx:id="buttonStop" disable="true" layoutX="640.0" layoutY="36.0" mnemonicParsing="false" onAction="#stopQuerysAutoClicker" prefHeight="35.0" prefWidth="70.0" text="Stop">
+        <cursor>
+            <Cursor fx:constant="HAND" />
+        </cursor>
+    </Button>
+    <Button fx:id="buttonResetOptions" layoutX="620.0" layoutY="204.0" mnemonicParsing="false" onAction="#resetOptionsSettings" text="Reset" />
+    <Button fx:id="buttonResetAutoClicker" layoutX="620.0" layoutY="363.0" mnemonicParsing="false" onAction="#resetAutoClickerSettings" text="Reset" textAlignment="RIGHT" />
+    <Button fx:id="buttonResetAutoText" layoutX="620.0" layoutY="613.0" mnemonicParsing="false" onAction="#resetAutoTextSettings" text="Reset" />
+    <HBox fx:id="mainHBox" alignment="CENTER_LEFT" layoutY="-1.0" onMouseDragged="#mouseDraggedOnHBox" onMousePressed="#mousePressedOnHBox" prefHeight="26.0" prefWidth="720.0" stylesheets="@../../Style/MainWindow/MainWindow.css">
+        <children>
+            <MenuBar fx:id="mainMenuBar" onMouseDragged="#mouseDraggedOnHBox" onMousePressed="#mousePressedOnHBox" prefHeight="25.0" style="-fx-background-color: #D4D4D4;">
+                <menus>
+                    <Menu fx:id="menuFile" mnemonicParsing="false" text="File">
+                        <items>
+                            <MenuItem fx:id="menuItemSourceCode" mnemonicParsing="false" onAction="#openSourceCode" text="Source Code">
+                                <graphic>
+                                    <ImageView fx:id="imageViewSourceCode" fitHeight="16.0" fitWidth="16.0" pickOnBounds="true" preserveRatio="true">
+                                        <image>
+                                            <Image url="@../../Images/MenuBar/File/SourcecodeIcon.png" />
+                                        </image>
+                                    </ImageView>
+                                </graphic>
+                            </MenuItem>
+                            <SeparatorMenuItem mnemonicParsing="false" />
+                            <MenuItem fx:id="menuItemExit" mnemonicParsing="false" onAction="#exitProgram" text="Exit">
+                                <graphic>
+                                    <ImageView fx:id="imageViewExit" fitHeight="16.0" fitWidth="16.0" pickOnBounds="true" preserveRatio="true">
+                                        <image>
+                                            <Image url="@../../Images/MenuBar/File/ExitIcon.png" />
+                                        </image>
+                                    </ImageView>
+                                </graphic>
+                            </MenuItem>
+                        </items>
+                    </Menu>
+                    <Menu fx:id="menuWindow" mnemonicParsing="false" text="Window">
+                        <items>
+                            <CheckMenuItem fx:id="checkMenuItemSounds" mnemonicParsing="false" onAction="#windowSounds" text="Sounds">
+                                <graphic>
+                                    <ImageView fx:id="imageViewSounds" fitHeight="16.0" fitWidth="16.0" pickOnBounds="true" preserveRatio="true">
+                                        <image>
+                                            <Image url="@../../Images/MenuBar/Window/SoundsIcon.png" />
+                                        </image>
+                                    </ImageView>
+                                </graphic>
+                            </CheckMenuItem>
+                            <Menu fx:id="menuWindowDesign" mnemonicParsing="false" text="Window design">
+                                <items>
+                                    <CheckMenuItem fx:id="checkMenuItemDesignBorderRadius" mnemonicParsing="false" onAction="#borderRadius" text="Border radius" />
+                                    <RadioMenuItem fx:id="radioMenuItemDesignBlue" mnemonicParsing="false" onAction="#blueDesign" text="Blue" />
+                                    <RadioMenuItem fx:id="radioMenuItemDesignGray" mnemonicParsing="false" onAction="#grayDesign" text="Gray" />
+                           <RadioMenuItem fx:id="radioMenuItemDesignGreen" mnemonicParsing="false" onAction="#greenDesign" text="Green" />
+                           <RadioMenuItem fx:id="radioMenuItemDesignPink" mnemonicParsing="false" onAction="#pinkDesign" text="Pink" />
+                           <RadioMenuItem fx:id="radioMenuItemDesignOrange" mnemonicParsing="false" onAction="#orangeDesign" text="Orange" />
+                           <RadioMenuItem fx:id="radioMenuItemDesignRed" mnemonicParsing="false" onAction="#redDesign" text="Red" />
+                           <RadioMenuItem fx:id="radioMenuItemDesignHacker" mnemonicParsing="false" onAction="#hackerDesign" text="Hacker" />
+                                </items>
+                                <graphic>
+                                    <ImageView fx:id="imageViewDesign" fitHeight="16.0" fitWidth="16.0" pickOnBounds="true" preserveRatio="true">
+                                        <image>
+                                            <Image url="@../../Images/MenuBar/Window/DesignIcon.png" />
+                                        </image>
+                                    </ImageView>
+                                </graphic>
+                            </Menu>
+                            <Menu fx:id="menuChangeLanguage" mnemonicParsing="false" text="Change language">
+                                <items>
+                                    <RadioMenuItem fx:id="radioMenuItemLanguageEng" mnemonicParsing="false" onAction="#english" text="English">
+                                        <graphic>
+                                            <ImageView fx:id="imageViewEng" fitHeight="16.0" fitWidth="16.0" pickOnBounds="true" preserveRatio="true">
+                                                <image>
+                                                    <Image url="@../../Images/MenuBar/Window/Languages/EnglishIcon.png" />
+                                                </image>
+                                            </ImageView>
+                                        </graphic>
+                                    </RadioMenuItem>
+                                    <RadioMenuItem fx:id="radioMenuItemLanguageFre" mnemonicParsing="false" onAction="#french" text="French">
+                                        <graphic>
+                                            <ImageView fx:id="imageViewFre" fitHeight="16.0" fitWidth="16.0" pickOnBounds="true" preserveRatio="true">
+                                                <image>
+                                                    <Image url="@../../Images/MenuBar/Window/Languages/FrenchIcon.png" />
+                                                </image>
+                                            </ImageView>
+                                        </graphic>
+                                    </RadioMenuItem>
+                                    <RadioMenuItem fx:id="radioMenuItemLanguageGer" mnemonicParsing="false" onAction="#german" text="German">
+                                        <graphic>
+                                            <ImageView fx:id="imageViewGer" fitHeight="16.0" fitWidth="16.0" pickOnBounds="true" preserveRatio="true">
+                                                <image>
+                                                    <Image url="@../../Images/MenuBar/Window/Languages/GermanIcon.png" />
+                                                </image>
+                                            </ImageView>
+                                        </graphic>
+                                    </RadioMenuItem>
+                                    <RadioMenuItem fx:id="radioMenuItemLanguageRus" mnemonicParsing="false" onAction="#russian" text="Pусский">
+                                        <graphic>
+                                            <ImageView fx:id="imageViewRus" fitHeight="16.0" fitWidth="16.0" pickOnBounds="true" preserveRatio="true">
+                                                <image>
+                                                    <Image url="@../../Images/MenuBar/Window/Languages/RussianIcon.png" />
+                                                </image>
+                                            </ImageView>
+                                        </graphic>
+                                    </RadioMenuItem>
+                                    <RadioMenuItem fx:id="radioMenuItemLanguageSpa" mnemonicParsing="false" onAction="#spanish" text="Español">
+                                        <graphic>
+                                            <ImageView fx:id="imageViewSpa" fitHeight="16.0" fitWidth="16.0" pickOnBounds="true" preserveRatio="true">
+                                                <image>
+                                                    <Image url="@../../Images/MenuBar/Window/Languages/SpanishIcon.png" />
+                                                </image>
+                                            </ImageView>
+                                        </graphic>
+                                    </RadioMenuItem>
+                                </items>
+                                <graphic>
+                                    <ImageView fx:id="imageViewChangeLanguage" fitHeight="16.0" fitWidth="16.0" pickOnBounds="true" preserveRatio="true">
+                                        <image>
+                                            <Image url="@../../Images/MenuBar/Window/LanguageIcon.png" />
+                                        </image>
+                                    </ImageView>
+                                </graphic>
+                            </Menu>
+                        </items>
+                    </Menu>
+                    <Menu fx:id="menuHelp" mnemonicParsing="false" text="Help">
+                        <items>
+                            <CheckMenuItem fx:id="checkMenuItemTips" mnemonicParsing="false" onAction="#setCustomTooltips" text="Tips">
+                                <graphic>
+                                    <ImageView fx:id="imageViewTips" fitHeight="16.0" fitWidth="16.0" pickOnBounds="true" preserveRatio="true">
+                                        <image>
+                                            <Image url="@../../Images/MenuBar/Window/TipsIcon.png" />
+                                        </image>
+                                    </ImageView>
+                                </graphic>
+                            </CheckMenuItem>
+                     <SeparatorMenuItem mnemonicParsing="false" />
+                            <MenuItem fx:id="menuItemRecommendQAC" mnemonicParsing="false" onAction="#recommendQAC" text="Recommend QAC">
+                                <graphic>
+                                    <ImageView fx:id="imageViewRecommendQAC" fitHeight="16.0" fitWidth="16.0" pickOnBounds="true" preserveRatio="true">
+                                        <image>
+                                            <Image url="@../../Images/MenuBar/Help/RecommendQACIcon.png" />
+                                        </image>
+                                    </ImageView>
+                                </graphic>
+                            </MenuItem>
+                            <CheckMenuItem fx:id="checkMenuItemAutoCheckForUpdates" mnemonicParsing="false" onAction="#autoCheckForUpdates" text="Check for updates automatically">
+                                <graphic>
+                                    <ImageView fx:id="imageViewCheckForUpdates" fitHeight="16.0" fitWidth="16.0" pickOnBounds="true" preserveRatio="true">
+                                        <image>
+                                            <Image url="@../../Images/MenuBar/Help/CheckForUpdatesIcon.png" />
+                                        </image>
+                                    </ImageView>
+                                </graphic>
+                            </CheckMenuItem>
+                        </items>
+                    </Menu>
+                </menus>
+                <cursor>
+                    <Cursor fx:constant="DEFAULT" />
+                </cursor>
+            </MenuBar>
+        </children>
+        <padding>
+            <Insets left="5.0" right="5.0" />
+        </padding>
+    </HBox>
+    <Label fx:id="mainLabelWindowTitle" layoutX="305.0" layoutY="4.0" onMouseDragged="#mouseDraggedOnHBox" onMousePressed="#mousePressedOnHBox" text="QuerysAutoClicker">
+        <font>
+            <Font name="System Bold" size="12.0" />
+        </font>
+    </Label>
+    <ImageView fx:id="imageViewClose" fitHeight="15.0" fitWidth="15.0" layoutX="695.0" layoutY="5.0" onMouseClicked="#exitProgram" pickOnBounds="true" preserveRatio="true">
+        <image>
+            <Image url="@../../Images/MenuBar/CloseButtonIcon.png" />
+        </image>
+        <cursor>
+            <Cursor fx:constant="HAND" />
+        </cursor>
+    </ImageView>
+    <ImageView fx:id="imageViewEnlarge" fitHeight="15.0" fitWidth="15.0" layoutX="672.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+        <image>
+            <Image url="@../../Images/MenuBar/DisabledButtonIcon.png" />
+        </image>
+    </ImageView>
+    <ImageView fx:id="imageViewMinimize" fitHeight="15.0" fitWidth="15.0" layoutX="649.0" layoutY="5.0" onMouseClicked="#minimizeWindow" pickOnBounds="true" preserveRatio="true">
+        <image>
+            <Image url="@../../Images/MenuBar/MinimizeButtonIcon.png" />
+        </image>
+        <cursor>
+            <Cursor fx:constant="HAND" />
+        </cursor>
+    </ImageView>
+    <ImageView fx:id="imageViewAlwaysOnTopPinFalse" fitHeight="15.0" fitWidth="11.0" layoutX="630.0" layoutY="6.0" onMouseClicked="#alwaysOnTop" pickOnBounds="true" preserveRatio="true" visible="false">
+        <image>
+            <Image url="@../../Images/MenuBar/PinnedFalseIcon.png" />
+        </image>
+        <cursor>
+            <Cursor fx:constant="HAND" />
+        </cursor>
+    </ImageView>
+    <ImageView fx:id="imageViewAlwaysOnTopPinTrue" fitHeight="15.0" fitWidth="11.0" layoutX="630.0" layoutY="6.0" onMouseClicked="#alwaysOnTop" pickOnBounds="true" preserveRatio="true">
+        <image>
+            <Image url="@../../Images/MenuBar/PinnedTrueIcon.png" />
+        </image>
+        <cursor>
+            <Cursor fx:constant="HAND" />
+        </cursor>
+    </ImageView>
+    <ImageView fx:id="mainImageViewDeveloperImage" fitHeight="15.0" fitWidth="15.0" layoutX="270.0" layoutY="5.0" onMouseClicked="#openContributorsWindow" pickOnBounds="true" preserveRatio="true">
+        <image>
+            <Image url="@../../Images/MenuBar/DeveloperIcon.png" />
+        </image>
+    </ImageView>
+
+    <Label fx:id="labelPartingLineLower" layoutY="388.0" text="----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------" />
+    <Label fx:id="labelPartingLineUpper" layoutY="225.0" text="----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------" />
+
+
+    <cursor>
+        <Cursor fx:constant="DEFAULT" />
+    </cursor>
+</AnchorPane>

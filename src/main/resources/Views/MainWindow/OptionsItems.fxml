@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="207.0" prefWidth="720.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.github.gqs.querysautoclicker.Controller.OptionsItemsController">
+    <TextField fx:id="textFieldStartHotkey" disable="true" editable="false" layoutX="98.0" layoutY="21.0" prefWidth="75.0" text="F6" />
+    <CheckBox fx:id="checkBoxStartHotkey" layoutX="98.0" layoutY="50.0" mnemonicParsing="false" onAction="#setStartHotkeyActive" onKeyPressed="#setStartHotkey" text="Set hotkey" />
+    <RadioButton fx:id="radioButtonAutoClicker" layoutX="190.0" layoutY="27.0" mnemonicParsing="false" onAction="#useAutoClicker" text="AutoClicker" />
+    <RadioButton fx:id="radioButtonAutoText" layoutX="300.0" layoutY="27.0" mnemonicParsing="false" onAction="#useAutoText" text="AutoText" />
+    <Label fx:id="labelOptions" layoutX="15.0" layoutY="83.0" text="Options" underline="true" />
+    <Label fx:id="labelStartInterval" layoutX="185.0" layoutY="83.0" text="Start interval:" />
+    <TextField fx:id="textFieldStartIntervalDays" layoutX="260.0" layoutY="79.0" onMouseClicked="#selectStandardValue" onScroll="#incrementOnScroll" prefWidth="65.0" text="0">
+    </TextField>
+    <Label fx:id="labelStartIntervalDays" layoutX="327.0" layoutY="83.0" text="d" />
+    <TextField fx:id="textFieldStartIntervalHours" layoutX="350.0" layoutY="79.0" onMouseClicked="#selectStandardValue" onScroll="#incrementOnScroll" prefWidth="65.0" text="0">
+    </TextField>
+    <Label fx:id="labelStartIntervalHours" layoutX="417.0" layoutY="83.0" text="h" />
+    <TextField fx:id="textFieldStartIntervalMinutes" layoutX="440.0" layoutY="79.0" onMouseClicked="#selectStandardValue" onScroll="#incrementOnScroll" prefWidth="65.0" text="0">
+    </TextField>
+    <Label fx:id="labelStartIntervalMinutes" layoutX="507.0" layoutY="83.0" text="m" />
+    <TextField fx:id="textFieldStartIntervalSeconds" layoutX="530.0" layoutY="79.0" onMouseClicked="#selectStandardValue" onScroll="#incrementOnScroll" prefWidth="65.0" text="0">
+    </TextField>
+    <Label fx:id="labelStartIntervalSeconds" layoutX="597.0" layoutY="83.0" text="s" />
+    <RadioButton fx:id="radioButtonQuantity" layoutX="10.0" layoutY="119.0" mnemonicParsing="false" onAction="#useQuantity" text="Quantity:" />
+    <TextField fx:id="textFieldQuantity" layoutX="87.0" layoutY="115.0" onMouseClicked="#selectStandardValue" onScroll="#incrementOnScroll" prefWidth="65.0" text="-1">
+    </TextField>
+    <RadioButton fx:id="radioButtonDuration" layoutX="180.0" layoutY="119.0" mnemonicParsing="false" onAction="#useDuration" text="Duration:">
+    </RadioButton>
+    <TextField fx:id="textFieldDurationDays" disable="true" layoutX="260.0" layoutY="115.0" onMouseClicked="#selectStandardValue" onScroll="#incrementOnScroll" prefWidth="65.0" text="0">
+    </TextField>
+    <Label fx:id="labelDurationDays" layoutX="327.0" layoutY="119.0" text="d" />
+    <TextField fx:id="textFieldDurationHours" disable="true" layoutX="350.0" layoutY="115.0" onMouseClicked="#selectStandardValue" onScroll="#incrementOnScroll" prefWidth="65.0" text="0">
+    </TextField>
+    <Label fx:id="labelDurationHours" layoutX="417.0" layoutY="119.0" text="h" />
+    <TextField fx:id="textFieldDurationMinutes" disable="true" layoutX="440.0" layoutY="115.0" onMouseClicked="#selectStandardValue" onScroll="#incrementOnScroll" prefWidth="65.0" text="0">
+    </TextField>
+    <Label fx:id="labelDurationMinutes" layoutX="507.0" layoutY="119.0" text="m" />
+    <TextField fx:id="textFieldDurationSeconds" disable="true" layoutX="530.0" layoutY="115.0" onMouseClicked="#selectStandardValue" onScroll="#incrementOnScroll" prefWidth="65.0" text="0">
+    </TextField>
+    <Label fx:id="labelDurationSeconds" layoutX="597.0" layoutY="119.0" text="s" />
+    <RadioButton fx:id="radioButtonSpeed" layoutX="10.0" layoutY="155.0" mnemonicParsing="false" onAction="#useSpeed" text="Speed:" />
+    <TextField fx:id="textFieldSpeed" layoutX="87.0" layoutY="151.0" onMouseClicked="#selectStandardValue" onScroll="#incrementOnScroll" prefWidth="36.0" text="5" />
+    <Label fx:id="labelAutoSpeed" layoutX="125.0" layoutY="155.0" text="cps" />
+    <RadioButton fx:id="radioButtonInterval" layoutX="180.0" layoutY="155.0" mnemonicParsing="false" onAction="#useInterval" text="Interval:" />
+    <TextField fx:id="textFieldIntervalDays" disable="true" layoutX="260.0" layoutY="151.0" onMouseClicked="#selectStandardValue" onScroll="#incrementOnScroll" prefWidth="65.0" text="0" />
+    <Label fx:id="labelIntervalDays" layoutX="327.0" layoutY="155.0" text="d" />
+    <TextField fx:id="textFieldIntervalHours" disable="true" layoutX="350.0" layoutY="151.0" onMouseClicked="#selectStandardValue" onScroll="#incrementOnScroll" prefWidth="65.0" text="0" />
+    <Label fx:id="labelIntervalHours" layoutX="417.0" layoutY="155.0" text="h" />
+    <TextField fx:id="textFieldIntervalMinutes" disable="true" layoutX="440.0" layoutY="151.0" onMouseClicked="#selectStandardValue" onScroll="#incrementOnScroll" prefWidth="65.0" text="0" />
+    <Label fx:id="labelIntervalMinutes" layoutX="507.0" layoutY="155.0" text="m" />
+    <TextField fx:id="textFieldIntervalSeconds" disable="true" layoutX="530.0" layoutY="151.0" onMouseClicked="#selectStandardValue" onScroll="#incrementOnScroll" prefWidth="65.0" text="0" />
+    <Label fx:id="labelIntervalSeconds" layoutX="597.0" layoutY="155.0" text="s" />
+    <TextField fx:id="textFieldIntervalMilliseconds" disable="true" layoutX="620.0" layoutY="151.0" onMouseClicked="#selectStandardValue" onScroll="#incrementOnScroll" prefWidth="65.0" text="0" />
+    <Label fx:id="labelIntervalMilliseconds" layoutX="687.0" layoutY="155.0" text="ms" />
+    <RadioButton fx:id="radioButtonHoldHotkey" layoutX="620.0" layoutY="119.0" mnemonicParsing="false" onAction="#useHoldHotkey" text="Hold hotkey">
+    </RadioButton>
+
+</AnchorPane>

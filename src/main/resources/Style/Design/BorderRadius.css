@@ -1,0 +1,11 @@
+#mainAnchorPane, #contributorsAnchorPane {
+  -fx-background-radius: 7;
+}
+
+#mainHBox, #contributorsHBox {
+  -fx-background-radius: 7 7 0 0;
+}
+
+#autoTextAnchorPane {
+ -fx-background-radius: 0 0 7 7;
+}
