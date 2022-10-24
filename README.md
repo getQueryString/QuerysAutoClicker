@@ -73,19 +73,19 @@ QuerysAutoClicker was not designed like other autoclickers from the web - it can
     - Us **known errors with macOS**:
         - AutoText only works with _insert text_ and _line for
           Line_
-- When starting [a new version] of QuerysAutoClicker for the first time on Windows, a warning will very likely be displayed. about that
-  To be able to start the program, click on **More information** and then on **Run anyway**. The reason for
-  this warning is <a href="https://github.com/kwhat/jnativehook">JNativeHook</a>. JNativeHook is only used in the program for that
-  the start/stop hotkey can also be recognized without the program having to be in the foreground or selected.
-- It is not recommended to set the click and write speed very high in the QuerysAutoClicker program, since the computer or
-  the program cannot provide this service. With AutoText, it can happen that the constant key combinations cause other
-  things happen or are opened. In the program, the speed set too high can be recognized by the red text. at
-  _Speed_ the number turns red when the value is 200 or higher. At _interval_, the number of _milliseconds_ turns red,
+- When starting [a new version] of QuerysAutoClicker for the first time on Windows, a warning will very likely be displayed. To start the
+  program, click on **More information** and then on **Run anyway**. The reason for this warning
+  is <a href="https://github.com/kwhat/jnativehook">JNativeHook</a>. JNativeHook is only used in the program so that the start/stop hotkey
+  can be recognized without the program having to be in the foreground or selected.
+- It is not recommended to set the click and write speed very high in QuerysAutoClicker, because the computer or
+  the program cannot provide this service. With AutoText, the constant key combinations can cause other things to happen or open. In the
+  program, the speed set too high can be recognized by the red text. For _speed_, the number turns red when the value is 200 or greater.
+  At _interval_, the number of _milliseconds_ turns red,
   if the total is 5 milliseconds or less.
 - The saved states are reset at program start if the _QuerysAutoClicker.ser_ file
   has been damaged or deleted.
-- QuerysAutoClicker accesses the _QuerysAutoClicker.ser_ file in the file path where the program was started. Becomes
-  If QuerysAutoClicker is started in a different path afterwards, a new _QuerysAutoClicker.ser_ file will be created.
+- QuerysAutoClicker accesses the QuerysAutoClicker.ser_ file in the file path where it was started. If QuerysAutoClicker is subsequently
+  started in a different path, a new _QuerysAutoClicker.ser_ file will be created.
 
 ## Installation
 

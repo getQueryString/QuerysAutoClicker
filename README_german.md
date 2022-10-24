@@ -78,14 +78,14 @@ QuerysAutoClicker wurde nicht wie andere AutoClicker aus dem Internet gestaltet 
   Programm starten zu können, muss auf **Weitere Informationen** und dann auf **Trotzdem ausführen** geklickt werden. Der Grund für
   diese Warnung ist <a href="https://github.com/kwhat/jnativehook">JNativeHook</a>. JNativeHook wird im Programm nur dafür verwendet, dass
   der Start/Stop-Hotkey auch dann erkannt werden kann, ohne dass das Programm im Vordergrund beziehungsweise ausgewählt sein muss.
-- Es ist nicht empfohlen, im QuerysAutoClicker-Programm die Klick- und Schreibgeschwindigkeit sehr hoch einzustellen, da der Computer oder
+- Es ist nicht empfohlen, in QuerysAutoClicker die Klick- und Schreibgeschwindigkeit sehr hoch einzustellen, da der Computer oder
   das Programm diese Leistung nicht aufbringen kann. Beim AutoText kann es vorkommen, dass durch die ständigen Tastenkombinationen andere
   Dinge passieren oder geöffnet werden. Im Programm ist die zu hoch eingestellte Geschwindigkeit an der roten Schrift zu erkennen. Bei
   _Geschwindigkeit_ wird die Zahl rot, wenn der Wert 200 oder höher ist. Bei _Intervall_ wird die Zahl von _Millisekunden_ rot,
   wenn der Gesamtwert 5 Millisekunden oder niedriger beträgt.
 - Die gespeicherten Zustände werden beim Programmstart zurückgesetzt, wenn die _QuerysAutoClicker.ser_-Datei
   beschädigt oder gelöscht wurde.
-- QuerysAutoClicker greift in dem Dateipfad auf die _QuerysAutoClicker.ser_-Datei zu, wo auch das Programm gestartet wurde. Wird
+- QuerysAutoClicker greift in dem Dateipfad auf die _QuerysAutoClicker.ser_-Datei zu, wo es auch gestartet wurde. Wird
   QuerysAutoClicker hinterher in einem anderen Pfad gestartet, wird eine neue _QuerysAutoClicker.ser_-Datei erstellt.
 
 ## Installation
