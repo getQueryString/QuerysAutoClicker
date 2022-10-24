@@ -85,6 +85,8 @@ QuerysAutoClicker wurde nicht wie andere AutoClicker aus dem Internet gestaltet 
   wenn der Gesamtwert 5 Millisekunden oder niedriger beträgt.
 - Die gespeicherten Zustände werden beim Programmstart zurückgesetzt, wenn die _QuerysAutoClicker.ser_-Datei
   beschädigt oder gelöscht wurde.
+- QuerysAutoClicker accesses the _QuerysAutoClicker.ser_ file in the file path where the program was started. If QuerysAutoClicker is
+  subsequently started in a different path, a new _QuerysAutoClicker.ser_ file will be created.
 
 ## Installation
 
@@ -193,7 +195,7 @@ getQueryString
 ## Haftungsausschluss
 
 Bei Schäden oder Ähnliches am Computer, die durch den AutoClicker oder AutoText verursacht werden, übernehme ich **keine Haftung**,
-da QuerysAutoClicker auf eigenes Risiko zu verwenden ist. Passieren kann durch den...
+da QuerysAutoClicker auf eigenes Risiko zu verwenden ist. Passieren kann durch den ...
 
 - ... AutoClicker, dass alles, was vom Mauszeiger berührt wird, angeklickt wird.
 - ... AutoText laut aktuellem Kenntnisstand nichts.

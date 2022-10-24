@@ -84,6 +84,8 @@ QuerysAutoClicker was not designed like other autoclickers from the web - it can
   if the total is 5 milliseconds or less.
 - The saved states are reset at program start if the _QuerysAutoClicker.ser_ file
   has been damaged or deleted.
+- QuerysAutoClicker accesses the _QuerysAutoClicker.ser_ file in the file path where the program was started. Becomes
+  If QuerysAutoClicker is started in a different path afterwards, a new _QuerysAutoClicker.ser_ file will be created.
 
 ## Installation
 
