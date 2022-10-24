@@ -91,7 +91,7 @@ QuerysAutoClicker was not designed like other autoclickers from the web - it can
 
 1. (Open Terminal: _Ctrl_ + _Alt_ + _T_)
    <br>
-   Download and unzip the QuerysAutoClicker-1.0.0.tar / .zip file of the latest version of QuerysAutoClicker here or download in terminal:
+   Download and unzip the QuerysAutoClicker-1.0.1.tar / .zip file of the latest version of QuerysAutoClicker here or download in terminal:
    ```
    git clone https://github.com/getQueryString/QuerysAutoClicker.git
    ```
@@ -104,7 +104,7 @@ QuerysAutoClicker was not designed like other autoclickers from the web - it can
 2. Download and install <a href="https://gluonhq.com/products/javafx/">JavaFX 19</a> for Linux. Type: _SDK_
 3. Start QuerysAutoClicker in the Terminal:
    ```
-   java --module-path /{PATH}/javafx-sdk-19/lib --add-modules javafx.controls,javafx.media,javafx.fxml -jar /{PATH}/QuerysAutoClicker/lib/QuerysAutoClicker-1.0.0 .jar
+   java --module-path /{PATH}/javafx-sdk-19/lib --add-modules javafx.controls,javafx.media,javafx.fxml -jar /{PATH}/QuerysAutoClicker/lib/QuerysAutoClicker-1.0.1 .jar
    ```
    or copy the edited command to a _Shell Script (.sh)_ file and give permission to that _Shell Script_ file
    give permission to run as a program:
@@ -120,7 +120,7 @@ QuerysAutoClicker was not designed like other autoclickers from the web - it can
 
 1. (Open Terminal: _Command (⌘)_ + _Spacebar_ > search for _Terminal_)
    <br>
-   Download and unzip the _QuerysAutoClicker-1.0.0.tar_ / _.zip_ file of the latest
+   Download and unzip the _QuerysAutoClicker-1.0.1.tar_ / _.zip_ file of the latest
    version of QuerysAutoClicker <a href="https://github.com/getQueryString/QuerysAutoClicker/releases">here</a>
    or download in Terminal:
    ```
@@ -136,7 +136,7 @@ QuerysAutoClicker was not designed like other autoclickers from the web - it can
    Accessibility_ > _Terminal_
 4. Start QuerysAutoClicker in the Terminal:
    ```
-   java --module-path /{PATH}/javafx-sdk-19/lib --add-modules javafx.controls,javafx.media,javafx.fxml -jar /{PATH}/QuerysAutoClicker/lib/QuerysAutoClicker-1.0.0 .jar
+   java --module-path /{PATH}/javafx-sdk-19/lib --add-modules javafx.controls,javafx.media,javafx.fxml -jar /{PATH}/QuerysAutoClicker/lib/QuerysAutoClicker-1.0.1 .jar
    ```
    or copy the edited command to a _Shell Script (.sh)_ file and give permission to that _Shell Script_ file
    give permission to run as a program:
@@ -157,9 +157,9 @@ QuerysAutoClicker was not designed like other autoclickers from the web - it can
 
 1. Download <a href="https://www.oracle.com/java/technologies/downloads/#java17">JDK 17</a> (Java Development Kit) for Windows
    and install (For example: _x64 Installer_ or _x64 MSI Installer_)
-2. Download and unzip the _QuerysAutoClicker-1.0.0.tar_ / _.zip_ file of the latest
+2. Download and unzip the _QuerysAutoClicker-1.0.1.tar_ / _.zip_ file of the latest
    Version of QuerysAutoClicker <a href="https://github.com/getQueryString/QuerysAutoClicker/releases">here</a>.
-3. Run the _QuerysAutoClicker-1.0.0.jar_ file in "\QuerysAutoClicker\lib\".
+3. Run the _QuerysAutoClicker-1.0.1.jar_ file in "\QuerysAutoClicker\lib\".
 
 ## Compatibility
 
