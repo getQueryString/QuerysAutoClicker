@@ -81,7 +81,7 @@ public class Main extends Application {
     public void start(Stage stage) throws Exception {
         // Warn if the operating system is Linux or macOS
         switch (UtilsOS.getOs()) {
-            case LINUX, MACOS -> System.out.println("Warning!: QAC for Linux and macOS still has bugs!");
+            case LINUX, MACOS -> System.out.println("QuerysAutoClicker for Linux and macOS still has bugs!");
             case INCOMPATIBLE -> System.exit(1);
         }
 
@@ -105,10 +105,7 @@ public class Main extends Application {
         JNativeHook.register();
 
         // Get Personalization settings
-        switch (UtilsOS.getOs()) {
-            case WINDOWS -> new PersonalizationConfig().getValues();
-            case LINUX, MACOS -> new PersonalizationConfig().applyPersonalizationToNonWindowsWindow();
-        }
+        new PersonalizationConfig().getValues();
 
         AutoText.setControlKey(UtilsOS.getOs() == WINDOWS ? VK_CONTROL
                 : UtilsOS.getOs() == LINUX ? VK_CONTROL

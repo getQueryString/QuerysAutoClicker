@@ -5,11 +5,8 @@ package com.github.gqs.querysautoclicker.Personalization;
 import com.github.gqs.querysautoclicker.Controller.ControllerRepository;
 import com.github.gqs.querysautoclicker.Controller.MainController;
 import com.github.gqs.querysautoclicker.Main.Net.Update;
-import com.github.gqs.querysautoclicker.Utils.UtilsOS;
 
 import java.io.*;
-
-import static com.github.gqs.querysautoclicker.Utils.UtilsOS.OS.WINDOWS;
 
 public class PersonalizationConfig {
 
@@ -17,8 +14,8 @@ public class PersonalizationConfig {
 
     private boolean isFileRepair = false;
 
-    public static final File personalizationConfig = new File(System.getProperty("user.home") + "\\QuerysAutoClicker.ser");
-    public static final String personalizationConfigFileName = System.getProperty("user.home") + "\\QuerysAutoClicker.ser";
+    public static final File personalizationConfig = new File("QuerysAutoClicker.ser");
+    public static final String personalizationConfigFileName = "QuerysAutoClicker.ser";
 
     private static FileInputStream fileInputStream;
     private static ObjectInputStream objectInputStream;
@@ -34,7 +31,6 @@ public class PersonalizationConfig {
      * Create new file if file content is corrupted
      */
     public void createValues() throws IOException {
-        if (UtilsOS.getOs() == WINDOWS) {
             alwaysOnTopState = new Save("alwaysOnTop", true);
             soundsState = new Save("windowSoundsEnabled", true);
             borderRadiusState = new Save("borderRadius", true);
@@ -47,7 +43,6 @@ public class PersonalizationConfig {
                 applyPersonalizationToWindow();
 
             save(alwaysOnTopState, soundsState, borderRadiusState, autoCheckForUpdates, designState, languageState);
-        }
     }
 
     /**
@@ -56,7 +51,6 @@ public class PersonalizationConfig {
      * @throws IOException
      */
     public static void setValues() throws IOException {
-        if (UtilsOS.getOs() == WINDOWS) {
             alwaysOnTopState = new Save("alwaysOnTop", MainWindow.getStage().isAlwaysOnTop());
             soundsState = new Save("windowSoundsEnabled", Sounds.isSoundsEnabled());
             borderRadiusState = new Save("borderRadius", Design.isBorderRadiusEnabled());
@@ -64,7 +58,6 @@ public class PersonalizationConfig {
             designState = new Save("design", Design.getSelectedDesign());
             languageState = new Save("language", Language.getSelectedLanguage());
             save(alwaysOnTopState, soundsState, borderRadiusState, autoCheckForUpdates, designState, languageState);
-        }
     }
 
     /**
@@ -114,14 +107,14 @@ public class PersonalizationConfig {
         setLanguage(languageState.getStringValue());
     }
 
-    public void applyPersonalizationToNonWindowsWindow() {
+    /*public void applyPersonalizationToNonWindowsWindow() {
         setAlwaysOnTop(true);
         setSounds(true);
         setBorderRadius(true);
         setAutoCheckForUpdates(true);
         setDesign("blue");
         setLanguage("eng");
-    }
+    }*/
 
     /**
      * Save values
