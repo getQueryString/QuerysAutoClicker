@@ -85,8 +85,8 @@ QuerysAutoClicker wurde nicht wie andere AutoClicker aus dem Internet gestaltet 
   wenn der Gesamtwert 5 Millisekunden oder niedriger beträgt.
 - Die gespeicherten Zustände werden beim Programmstart zurückgesetzt, wenn die _QuerysAutoClicker.ser_-Datei
   beschädigt oder gelöscht wurde.
-- QuerysAutoClicker accesses the _QuerysAutoClicker.ser_ file in the file path where the program was started. If QuerysAutoClicker is
-  subsequently started in a different path, a new _QuerysAutoClicker.ser_ file will be created.
+- QuerysAutoClicker greift in dem Dateipfad auf die _QuerysAutoClicker.ser_-Datei zu, wo auch das Programm gestartet wurde. Wird
+  QuerysAutoClicker hinterher in einem anderen Pfad gestartet, wird eine neue _QuerysAutoClicker.ser_-Datei erstellt.
 
 ## Installation
 
