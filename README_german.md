@@ -74,15 +74,19 @@ QuerysAutoClicker wurde nicht wie andere AutoClicker aus dem Internet gestaltet 
     - Uns **bekannte Fehler bei macOS**:
         - AutoText funktioniert nur mit _Text einfügen_ und _Zeile für
           Zeile_
-- Beim ersten Starten [einer neuen Version] von QuerysAutoClicker wird bei Windows sehr wahrscheinlich eine Warnung angezeigt werden. Um das
+- QuerysAutoClicker benötigt nur für die automatische Update-Suche beim Programmstart eine Internetverbindung.
+- Beim ersten Starten [einer neuen Version] von QuerysAutoClicker wird bei Windows möglicherweise eine Warnung angezeigt werden. Um das
   Programm starten zu können, muss auf **Weitere Informationen** und dann auf **Trotzdem ausführen** geklickt werden. Der Grund für
   diese Warnung ist <a href="https://github.com/kwhat/jnativehook">JNativeHook</a>. JNativeHook wird im Programm nur dafür verwendet, dass
   der Start/Stop-Hotkey auch dann erkannt werden kann, ohne dass das Programm im Vordergrund beziehungsweise ausgewählt sein muss.
 - Es ist nicht empfohlen, in QuerysAutoClicker die Klick- und Schreibgeschwindigkeit sehr hoch einzustellen, da der Computer oder
-  das Programm diese Leistung nicht aufbringen kann. Beim AutoText kann es vorkommen, dass durch die ständigen Tastenkombinationen andere
-  Dinge passieren oder geöffnet werden. Im Programm ist die zu hoch eingestellte Geschwindigkeit an der roten Schrift zu erkennen. Bei
-  _Geschwindigkeit_ wird die Zahl rot, wenn der Wert 200 oder höher ist. Bei _Intervall_ wird die Zahl von _Millisekunden_ rot,
-  wenn der Gesamtwert 5 Millisekunden oder niedriger beträgt.
+  das Programm diese Leistung nicht aufbringen kann. Im Programm ist die zu hoch eingestellte Geschwindigkeit an der roten Schrift zu
+  erkennen. Bei _Geschwindigkeit_ wird die Zahl rot, wenn der Wert 200 oder höher ist.
+  Bei _Intervall_ wird die Zahl von _Millisekunden_ rot, wenn der Gesamtwert 5 Millisekunden oder niedriger beträgt.
+    - Durch den AutoClicker kann es passieren, dass alles, was vom Mauszeiger versehentlich
+      berührt wird, angeklickt wird.
+    - Durch den AutoText kann es vorkommen, dass durch eine zu hoch eingestellte
+      Schreibgeschwindigkeit die ständigen Tastenkombinationen unerwartete Dinge tun oder andere Sachen geöffnet werden.
 - Die gespeicherten Zustände werden beim Programmstart zurückgesetzt, wenn die _QuerysAutoClicker.ser_-Datei
   beschädigt oder gelöscht wurde.
 - QuerysAutoClicker greift in dem Dateipfad auf die _QuerysAutoClicker.ser_-Datei zu, wo es auch gestartet wurde. Wird
@@ -189,10 +193,7 @@ getQueryString
 ## Haftungsausschluss
 
 Bei Schäden oder Ähnliches am Computer, die durch den AutoClicker oder AutoText verursacht werden, übernehme ich **keine Haftung**,
-da QuerysAutoClicker auf eigenes Risiko zu verwenden ist. Passieren kann durch den ...
-
-- ... AutoClicker, dass alles, was vom Mauszeiger berührt wird, angeklickt wird.
-- ... AutoText laut aktuellem Kenntnisstand nichts.
+da QuerysAutoClicker auf eigenes Risiko zu verwenden ist.
 
 ## Copyright
 
