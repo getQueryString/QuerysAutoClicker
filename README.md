@@ -56,8 +56,7 @@ QuerysAutoClicker was not designed like other autoclickers from the web - it can
 - Automatic update search when starting the program can be switched on and off
 - Always put in the foreground:
     - **Green pushpin**: Always on top (Always on top of all other windows)
-    - **Red pushpin**: Behind other windows as soon as others
-      window can be dragged over the QuerysAutoClicker window
+    - **Red pushpin**: Behind other windows as soon as others window can be dragged over the QuerysAutoClicker window.
 
 - All states of the listed adjustable functions are automatically saved in the _QuerysAutoClicker.ser_ file.
 

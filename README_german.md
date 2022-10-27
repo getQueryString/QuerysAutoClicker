@@ -57,8 +57,7 @@ QuerysAutoClicker wurde nicht wie andere AutoClicker aus dem Internet gestaltet 
 - Automatische Update-Suche beim Programmstart ein- und ausschaltbar
 - Immer in den Vordergrund setzbar:
     - **Pinnnadel grün**: Immer oben (Immer über allen anderen Fenstern)
-    - **Pinnnadel rot**: Hinter anderen Fenstern, sobald andere
-      Fenster über das QuerysAutoClicker-Fenster gezogen werden
+    - **Pinnnadel rot**: Hinter anderen Fenstern, sobald andere Fenster über das QuerysAutoClicker-Fenster gezogen werden.
 
 - Alle Zustände der aufgelisteten einstellbaren Funktionen werden automatisch in der _QuerysAutoClicker.ser_-Datei gespeichert.
 
