@@ -104,9 +104,9 @@ public class Update {
     }
 
     /**
-     * When AutoCheckForUpdates at program start is enabled: isAutoCheckForUpdatesEnabled == true
+     * When AutoCheckForUpdates at program start is enabled: isAutoCheckForUpdatesEnabled = true
      * <p>
-     * When AutoCheckForUpdates at program start is disabled: isAutoCheckForUpdatesEnabled == false
+     * When AutoCheckForUpdates at program start is disabled: isAutoCheckForUpdatesEnabled = false
      * </p>
      *
      * @param isAutoCheckForUpdatesEnabled

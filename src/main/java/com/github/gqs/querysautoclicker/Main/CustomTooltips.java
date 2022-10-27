@@ -409,9 +409,9 @@ public class CustomTooltips {
     }
 
     /**
-     * When CustomTooltips is enabled: isTipsEnabled == true
+     * When CustomTooltips is enabled: isTipsEnabled = true
      * <p>
-     * When CustomTooltips is disabled: isTipsEnabled == false
+     * When CustomTooltips is disabled: isTipsEnabled = false
      * </p>
      *
      * @param isTipsEnabled

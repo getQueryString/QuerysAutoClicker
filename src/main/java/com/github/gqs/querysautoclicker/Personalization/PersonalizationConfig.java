@@ -31,18 +31,18 @@ public class PersonalizationConfig {
      * Create new file if file content is corrupted
      */
     public void createValues() throws IOException {
-            alwaysOnTopState = new Save("alwaysOnTop", true);
-            soundsState = new Save("windowSoundsEnabled", true);
-            borderRadiusState = new Save("borderRadius", true);
-            autoCheckForUpdates = new Save("autoCheckForUpdates", true);
-            designState = new Save("design", "blue");
-            languageState = new Save("language", "eng");
+        alwaysOnTopState = new Save("alwaysOnTop", true);
+        soundsState = new Save("windowSoundsEnabled", true);
+        borderRadiusState = new Save("borderRadius", true);
+        autoCheckForUpdates = new Save("autoCheckForUpdates", true);
+        designState = new Save("design", "blue");
+        languageState = new Save("language", "eng");
 
-            // The new correct states are passed to the program if the old file had previously been corrupted and a new one had to be created.
-            if (isFileRepair)
-                applyPersonalizationToWindow();
+        // The new correct states are passed to the program if the old file had previously been corrupted and a new one had to be created.
+        if (isFileRepair)
+            applyPersonalizationToWindow();
 
-            save(alwaysOnTopState, soundsState, borderRadiusState, autoCheckForUpdates, designState, languageState);
+        save(alwaysOnTopState, soundsState, borderRadiusState, autoCheckForUpdates, designState, languageState);
     }
 
     /**
@@ -51,13 +51,13 @@ public class PersonalizationConfig {
      * @throws IOException
      */
     public static void setValues() throws IOException {
-            alwaysOnTopState = new Save("alwaysOnTop", MainWindow.getStage().isAlwaysOnTop());
-            soundsState = new Save("windowSoundsEnabled", Sounds.isSoundsEnabled());
-            borderRadiusState = new Save("borderRadius", Design.isBorderRadiusEnabled());
-            autoCheckForUpdates = new Save("autoCheckForUpdates", Update.isAutoCheckForUpdatesEnabled());
-            designState = new Save("design", Design.getSelectedDesign());
-            languageState = new Save("language", Language.getSelectedLanguage());
-            save(alwaysOnTopState, soundsState, borderRadiusState, autoCheckForUpdates, designState, languageState);
+        alwaysOnTopState = new Save("alwaysOnTop", MainWindow.getStage().isAlwaysOnTop());
+        soundsState = new Save("windowSoundsEnabled", Sounds.isSoundsEnabled());
+        borderRadiusState = new Save("borderRadius", Design.isBorderRadiusEnabled());
+        autoCheckForUpdates = new Save("autoCheckForUpdates", Update.isAutoCheckForUpdatesEnabled());
+        designState = new Save("design", Design.getSelectedDesign());
+        languageState = new Save("language", Language.getSelectedLanguage());
+        save(alwaysOnTopState, soundsState, borderRadiusState, autoCheckForUpdates, designState, languageState);
     }
 
     /**
@@ -106,15 +106,6 @@ public class PersonalizationConfig {
         setDesign(designState.getStringValue());
         setLanguage(languageState.getStringValue());
     }
-
-    /*public void applyPersonalizationToNonWindowsWindow() {
-        setAlwaysOnTop(true);
-        setSounds(true);
-        setBorderRadius(true);
-        setAutoCheckForUpdates(true);
-        setDesign("blue");
-        setLanguage("eng");
-    }*/
 
     /**
      * Save values

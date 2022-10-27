@@ -57,9 +57,9 @@ public class Sounds extends PersonalizationConfig {
     }
 
     /**
-     * When Sounds is enabled: isSoundsEnabled == true
+     * When Sounds is enabled: isSoundsEnabled = true
      * <p>
-     * When Sounds is disabled: isSoundsEnabled == false
+     * When Sounds is disabled: isSoundsEnabled = false
      * </p>
      *
      * @param isSoundsEnabled
@@ -76,9 +76,9 @@ public class Sounds extends PersonalizationConfig {
     }
 
     /**
-     * When ClickSound is enabled: isClickSoundPlaying == true
+     * When ClickSound is enabled: isClickSoundPlaying = true
      * <p>
-     * When ClickSound is disabled: isClickSoundPlaying == false
+     * When ClickSound is disabled: isClickSoundPlaying = false
      * </p>
      *
      * @param isClickSoundPlaying
@@ -95,9 +95,9 @@ public class Sounds extends PersonalizationConfig {
     }
 
     /**
-     * When WarnSound is enabled: isWarnSoundPlaying == true
+     * When WarnSound is enabled: isWarnSoundPlaying = true
      * <p>
-     * When WarnSound is disabled: isWarnSoundPlaying == false
+     * When WarnSound is disabled: isWarnSoundPlaying = false
      * </p>
      *
      * @param isWarnSoundPlaying

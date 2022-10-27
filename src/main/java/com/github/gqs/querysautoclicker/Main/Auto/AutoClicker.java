@@ -303,9 +303,9 @@ public class AutoClicker {
     }
 
     /**
-     * When AutoClicker is running:: isAutoClickerRunning == true
+     * When AutoClicker is running:: isAutoClickerRunning = true
      * <p>
-     * When AutoClicker is not running:: isAutoClickerRunning == false
+     * When AutoClicker is not running:: isAutoClickerRunning = false
      * </p>
      *
      * @param isAutoClickerRunning
@@ -338,9 +338,9 @@ public class AutoClicker {
     }
 
     /**
-     * When HoldClick is enabled: isHoldClickEnabled == true
+     * When HoldClick is enabled: isHoldClickEnabled = true
      * <p>
-     * When HoldClick is disabled: isHoldClickEnabled == false
+     * When HoldClick is disabled: isHoldClickEnabled = false
      * </p>
      *
      * @param isHoldClickEnabled
@@ -357,9 +357,9 @@ public class AutoClicker {
     }
 
     /**
-     * When HoldHotkey is enabled: isHoldHotkeyEnabled == true
+     * When HoldHotkey is enabled: isHoldHotkeyEnabled = true
      * <p>
-     * When HoldHotkey is disabled: isHoldHotkeyEnabled == false
+     * When HoldHotkey is disabled: isHoldHotkeyEnabled = false
      * </p>
      *
      * @param isHoldHotkeyEnabled
@@ -408,9 +408,9 @@ public class AutoClicker {
     }
 
     /**
-     * When PickClickPosition is enabled: isPickClickPositionEnabled == true
+     * When PickClickPosition is enabled: isPickClickPositionEnabled = true
      * <p>
-     * When PickClickPosition is disabled: isPickClickPositionEnabled == false
+     * When PickClickPosition is disabled: isPickClickPositionEnabled = false
      * </p>
      *
      * @param isPickClickPositionEnabled

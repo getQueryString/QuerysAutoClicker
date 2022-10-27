@@ -338,9 +338,9 @@ public class AutoText {
     }
 
     /**
-     * When AutoText is running:: isAutoTextRunning == true
+     * When AutoText is running:: isAutoTextRunning = true
      * <p>
-     * When AutoText is not running:: isAutoTextRunning == false
+     * When AutoText is not running:: isAutoTextRunning = false
      * </p>
      *
      * @param isAutoTextRunning
@@ -373,9 +373,9 @@ public class AutoText {
     }
 
     /**
-     * When PasteText is enabled: isPasteTextEnabled == true
+     * When PasteText is enabled: isPasteTextEnabled = true
      * <p>
-     * When PasteText is disabled: isPasteTextEnabled == false
+     * When PasteText is disabled: isPasteTextEnabled = false
      * </p>
      *
      * @param isPasteTextEnabled
@@ -392,9 +392,9 @@ public class AutoText {
     }
 
     /**
-     * When PasteTextLineForLine is enabled: isPasteTextLineForLineEnabled == true
+     * When PasteTextLineForLine is enabled: isPasteTextLineForLineEnabled = true
      * <p>
-     * When PasteTextLineForLine is disabled: isPasteTextLineForLineEnabled == false
+     * When PasteTextLineForLine is disabled: isPasteTextLineForLineEnabled = false
      * </p>
      *
      * @param isPasteTextLineForLineEnabled
@@ -411,9 +411,9 @@ public class AutoText {
     }
 
     /**
-     * When Replace is enabled: isReplaceEnabled == true
+     * When Replace is enabled: isReplaceEnabled = true
      * <p>
-     * When Replace is disabled: isReplaceEnabled == false
+     * When Replace is disabled: isReplaceEnabled = false
      * </p>
      *
      * @param isReplaceEnabled

@@ -108,9 +108,9 @@ public class Start {
     }
 
     /**
-     * When StartDelay is enabled: isStartDelayEnabled == true
+     * When StartDelay is enabled: isStartDelayEnabled = true
      * <p>
-     * When StartDelay is disabled: isStartDelayEnabled == false
+     * When StartDelay is disabled: isStartDelayEnabled = false
      * </p>
      *
      * @param isStartDelayEnabled

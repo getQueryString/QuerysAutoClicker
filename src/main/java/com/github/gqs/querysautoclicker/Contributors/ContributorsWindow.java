@@ -114,9 +114,9 @@ public class ContributorsWindow {
     }
 
     /**
-     * When the contributors window is open: isContributorsWindowShowing == true
+     * When the contributors window is open: isContributorsWindowShowing = true
      * <p>
-     * When the contributors window is closed: isContributorsWindowShowing == false
+     * When the contributors window is closed: isContributorsWindowShowing = false
      * </p>
      *
      * @param isContributorsWindowShowing

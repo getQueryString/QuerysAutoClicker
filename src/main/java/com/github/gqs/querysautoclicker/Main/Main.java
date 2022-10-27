@@ -45,7 +45,7 @@ public class Main extends Application {
     public final ScheduledExecutorService threadPool = Executors.newScheduledThreadPool(2);
 
     // Version code
-    public final String programVersion = "v1.0.1";
+    public final String programVersion = "v1.0.2";
 
     private final Timer searchForUpdateTimer = new Timer();
 

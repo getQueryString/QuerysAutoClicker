@@ -277,9 +277,9 @@ public class Check {
     }
 
     /**
-     * When the TextFields of Duration are empty: isDurationEmpty == true
+     * When the TextFields of Duration are empty: isDurationEmpty = true
      * <p>
-     * When the TextFields of Duration are not empty: isDurationEmpty == false
+     * When the TextFields of Duration are not empty: isDurationEmpty = false
      * </p>
      */
     public static void setDurationEmpty(boolean isDurationEmpty) {
@@ -294,9 +294,9 @@ public class Check {
     }
 
     /**
-     * When the TextFields of Interval are empty: isIntervalEmpty == true
+     * When the TextFields of Interval are empty: isIntervalEmpty = true
      * <p>
-     * When the TextFields of Interval are not empty: isIntervalEmpty == false
+     * When the TextFields of Interval are not empty: isIntervalEmpty = false
      * </p>
      */
     public static void setIntervalEmpty(boolean isIntervalEmpty) {

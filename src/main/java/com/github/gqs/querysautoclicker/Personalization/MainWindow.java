@@ -74,7 +74,6 @@ public class MainWindow extends PersonalizationConfig {
      */
     public static void setAlwaysOnTopState() throws IOException {
         alwaysOnTop();
-        System.out.println(getStage().isAlwaysOnTop());
         setValues();
     }
 
@@ -181,6 +180,14 @@ public class MainWindow extends PersonalizationConfig {
         return gMI.primaryStage;
     }
 
+    /**
+     * If the MainWindow is alwaysOnTop: getStage().isAlwaysOnTop() = true
+     * <p>
+     * If the MainWindow is not alwaysOnTop: getStage().isAlwaysOnTop() = false
+     * </p>
+     *
+     * @param isAlwaysOnTop
+     */
     public static void setStageAlwaysOnTop(boolean isAlwaysOnTop) {
         gMI.primaryStage.setAlwaysOnTop(isAlwaysOnTop);
     }
