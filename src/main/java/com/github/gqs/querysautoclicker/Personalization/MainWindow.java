@@ -74,7 +74,25 @@ public class MainWindow extends PersonalizationConfig {
      */
     public static void setAlwaysOnTopState() throws IOException {
         alwaysOnTop();
+        System.out.println(getStage().isAlwaysOnTop());
         setValues();
+    }
+
+    /**
+     * If the MainWindow was previously set to alwaysOnTop = true and an alert is created, the MainWindow
+     * will be placed in the background, otherwise the alert will not be visible.
+     * <p>
+     * If the alert is closed, the MainWindow is reset to alwaysOnTop = true.
+     * </p>
+     */
+    public static void setStageWasAlwaysOnTop() {
+        if (getStage().isAlwaysOnTop()) {
+            wasStageAlwaysOnTop = true;
+            alwaysOnTop();
+        } else if (wasStageAlwaysOnTop()) {
+            wasStageAlwaysOnTop = false;
+            alwaysOnTop();
+        }
     }
 
     /**
@@ -91,11 +109,8 @@ public class MainWindow extends PersonalizationConfig {
      *
      * @param status
      * @throws NativeHookException
-     * @throws IOException
      */
-    public static void exit(int status) throws NativeHookException, IOException {
-        if (wasStageAlwaysOnTop())
-            setAlwaysOnTopState();
+    public static void exit(int status) throws NativeHookException {
         GlobalScreen.unregisterNativeHook();
         Platform.exit();
         System.exit(status);
@@ -175,19 +190,6 @@ public class MainWindow extends PersonalizationConfig {
      */
     public static boolean wasStageAlwaysOnTop() {
         return wasStageAlwaysOnTop;
-    }
-
-    /**
-     * If the MainWindow was previously set to alwaysOnTop = true and an alert is created, the MainWindow
-     * will be placed in the background, otherwise the alert will not be visible.
-     * <p>
-     * If the alert is closed again, the MainWindow is reset to alwaysOnTop = true.
-     * </p>
-     *
-     * @param wasStageAlwaysOnTop
-     */
-    public static void setStageWasAlwaysOnTop(boolean wasStageAlwaysOnTop) {
-        MainWindow.wasStageAlwaysOnTop = wasStageAlwaysOnTop;
     }
 
     /**

@@ -50,15 +50,9 @@ public class Update {
      */
     public static void search() throws Exception {
         getLatestVersion();
-        if (MainWindow.getStage().isAlwaysOnTop()) {
-            MainWindow.setStageWasAlwaysOnTop(true);
-            MainWindow.alwaysOnTop();
-        }
+        MainWindow.setStageWasAlwaysOnTop();
         showUpdateWindow();
-        if (MainWindow.wasStageAlwaysOnTop()) {
-            MainWindow.setStageWasAlwaysOnTop(false);
-            MainWindow.alwaysOnTop();
-        }
+        MainWindow.setStageWasAlwaysOnTop();
     }
 
     /**
@@ -79,6 +73,7 @@ public class Update {
             jsonObject = new JSONObject(response.body());
             getNewVersionCode = jsonObject.getString("tag_name");
         } catch (JSONException | HttpConnectTimeoutException | ConnectException ignored) {
+            MainWindow.setStageWasAlwaysOnTop();
         }
     }
 

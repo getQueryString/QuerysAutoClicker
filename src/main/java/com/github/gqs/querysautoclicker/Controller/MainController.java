@@ -360,9 +360,8 @@ public class MainController implements Initializable, IController {
      * Exit program
      *
      * @throws NativeHookException
-     * @throws IOException
      */
-    public void exitProgram() throws NativeHookException, IOException {
+    public void exitProgram() throws NativeHookException {
         MainWindow.exit(0);
     }
 
