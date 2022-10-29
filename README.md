@@ -1,5 +1,5 @@
 <p style="text-align: center;">
-<img src="QuerysAutoClicker_Icon+QAC_Logo.png" alt="QuerysAutoClicker logo" style="width: 25%;">
+<img src="QuerysAutoClicker_GitHub_Logo.png" alt="QuerysAutoClicker logo" style="width: 25%;">
 
 # QuerysAutoClicker (QAC)
 
