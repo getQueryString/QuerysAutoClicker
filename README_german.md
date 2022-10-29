@@ -1,4 +1,3 @@
-<p style="text-align: center;">
 <img src="QuerysAutoClicker_Icon+QAC_Logo.png" alt="QuerysAutoClicker-Logo" style="width: 25%;">
 
 # QuerysAutoClicker (QAC)
