@@ -92,7 +92,7 @@ QuerysAutoClicker was not designed like other autoclickers from the web - it can
 
 1. (Open Terminal: _Ctrl_ + _Alt_ + _T_)
    <br>
-   Download the _QuerysAutoClicker-1.0.1.tar_ / _.zip_ file of the latest version
+   Download the _QuerysAutoClicker-1.0.2.tar_ / _.zip_ file of the latest version
    from <a href="https://github.com/getQueryString/QuerysAutoClicker/releases">QuerysAutoClicker</a> and unzip it.
 2. <a href="https://www.oracle.com/java/technologies/downloads/#java17">Download JDK 17 (Java Development Kit) for Linux</a> and
    install or install in terminal:
@@ -103,7 +103,7 @@ QuerysAutoClicker was not designed like other autoclickers from the web - it can
 3. <a href="https://gluonhq.com/products/javafx/">Download JavaFX 19 for Linux</a> and install. Type: _SDK_
 4. Start QuerysAutoClicker in the terminal:
    ```
-   java --module-path /{PATH}/javafx-sdk-19/lib --add-modules javafx.controls,javafx.media,javafx.fxml -jar /{PATH}/QuerysAutoClicker/lib/QuerysAutoClicker-1.0.1 .jar
+   java --module-path /{PATH}/javafx-sdk-19/lib --add-modules javafx.controls,javafx.media,javafx.fxml -jar /{PATH}/QuerysAutoClicker/lib/QuerysAutoClicker-1.0.2 .jar
    ```
    or copy the edited command to a _Shell Script (.sh)_ file and give permission to that _Shell Script_ file
    give permission to run as a program:
@@ -119,7 +119,7 @@ QuerysAutoClicker was not designed like other autoclickers from the web - it can
 
 1. (Open Terminal: _Command (⌘)_ + _Spacebar_ > search for _Terminal_)
    <br>
-   Download the _QuerysAutoClicker-1.0.1.tar_ / _.zip_ file of the latest version
+   Download the _QuerysAutoClicker-1.0.2.tar_ / _.zip_ file of the latest version
    from <a href="https://github.com/getQueryString/QuerysAutoClicker/releases">QuerysAutoClicker</a> and unzip it.
 2. <a href="https://www.oracle.com/java/technologies/downloads/#java17">Download JDK 17 (Java Development Kit) for macOS</a> and
    install or install in terminal:
@@ -131,7 +131,7 @@ QuerysAutoClicker was not designed like other autoclickers from the web - it can
    Accessibility_ > _Terminal_
 5. Start QuerysAutoClicker in the terminal:
    ```
-   java --module-path /{PATH}/javafx-sdk-19/lib --add-modules javafx.controls,javafx.media,javafx.fxml -jar /{PATH}/QuerysAutoClicker/lib/QuerysAutoClicker-1.0.1 .jar
+   java --module-path /{PATH}/javafx-sdk-19/lib --add-modules javafx.controls,javafx.media,javafx.fxml -jar /{PATH}/QuerysAutoClicker/lib/QuerysAutoClicker-1.0.2 .jar
    ```
    or copy the edited command to a _Shell Script (.sh)_ file and give permission to that _Shell Script_ file
    give permission to run as a program:
@@ -152,9 +152,9 @@ QuerysAutoClicker was not designed like other autoclickers from the web - it can
 
 1. <a href="https://www.oracle.com/java/technologies/downloads/#java17">Download JDK 17 (Java Development Kit) for Windows</a>
    and install. (For example: _x64 Installer_ or _x64 MSI Installer_)
-2. Download the _QuerysAutoClicker-1.0.1.tar_ / _.zip_ file of the latest version
+2. Download the _QuerysAutoClicker-1.0.2.tar_ / _.zip_ file of the latest version
    from <a href="https://github.com/getQueryString/QuerysAutoClicker/releases">QuerysAutoClicker</a> and unzip it.
-3. Run the _QuerysAutoClicker-1.0.1.jar_ file in "\QuerysAutoClicker\lib\".
+3. Run the _QuerysAutoClicker-1.0.2.jar_ file in "\QuerysAutoClicker\lib\".
 
 ## Compatibility
 
