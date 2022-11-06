@@ -40,7 +40,7 @@ can have, there is also an AutoText function, with which the entered text can be
 Not only the click or write speed can be changed ...
 <br>
 <br>
-QuerysAutoClicker was not designed like other autoclickers from the web - it can be customized at will:
+QuerysAutoClicker was not designed like other AutoClickers from the web - it can be customized at will:
 
 - Click and warning sounds can be switched on and off
 - Choice of 8 designs
