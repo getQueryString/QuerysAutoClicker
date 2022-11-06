@@ -10,7 +10,7 @@
 1. [Thanks](#Thanks)
 2. [QuerysAutoClicker](#QuerysAutoClicker)
 3. [Properties](#Properties)
-4. [Notes](#Notes)
+4. [Clues](#Clues)
 5. [Installation](#Installation)
 6. [Compatibility](#Compatibility)
 7. [Contributors](#Contributors)
@@ -59,7 +59,7 @@ QuerysAutoClicker was not designed like other autoclickers from the web - it can
 
 - All states of the listed adjustable functions are automatically saved in the _QuerysAutoClicker.ser_ file.
 
-## Notes
+## Clues
 
 - If you found a bug, have suggestions for improvement or feedback for us, then please write us a message in the
   dedicated _Feedback_ channel <a href="https://discord.gg/AeGFarvQyk">on our Discord server</a>.
