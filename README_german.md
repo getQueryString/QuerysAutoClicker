@@ -3,7 +3,7 @@
 # QuerysAutoClicker (QAC)
 
 - **[English version](https://github.com/getQueryString/QuerysAutoClicker/blob/master/README.md)**
-- [Unser QueryCommunity Discord-Server](https://discord.gg/AeGFarvQyk)
+- [Unser QueryCommunity-Discord-Server](https://discord.gg/AeGFarvQyk)
 
 ## Inhaltsverzeichnis
 
@@ -168,8 +168,7 @@ QuerysAutoClicker wurde nicht wie andere AutoClicker aus dem Internet gestaltet 
 **JDK**: <a href="https://www.oracle.com/java/technologies/javase/products-doc-jdk17certconfig.html">Oracle JDK 17</a>
 / <a href="https://www.oracle.com/java/technologies/javase/products-doc-jdk19certconfig.html">Oracle JDK 19</a>
 <br>
-**JavaFX**: In der _JavaFX 1.2 SDK Requirements-_
-Tabelle <a href="https://www.oracle.com/java/technologies/javafx/system-requirements.html#javafxsdk">auf der Webseite von Oracle</a>
+**JavaFX**: In der <i>JavaFX 1.2 SDK Requirements</i>-Tabelle <a href="https://www.oracle.com/java/technologies/javafx/system-requirements.html#javafxsdk">auf der Webseite von Oracle</a>
 sind nur die Zeilen _Processors_, _Operating System_, Memory und _Disk Space_ relevant.
 
 ## Mitwirkende
