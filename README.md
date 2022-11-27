@@ -53,7 +53,7 @@ QuerysAutoClicker was not designed like other AutoClickers from the web - it can
 - If anything is unclear, _Tips_ can be switched on and off. If the tips are activated, short help texts appear when you use
   mouse over the elements.
 - Automatic update search when starting the program can be switched on and off
-- Always put in the foreground:
+- Set always in the foreground:
     - **Green pushpin**: Always on top (Always on top of all other windows)
     - **Red pushpin**: Behind other windows as soon as others window can be dragged over the QuerysAutoClicker window.
 
