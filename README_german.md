@@ -25,8 +25,8 @@ Da dies mein erstes großes Projekt ist und ich kein Profiprogrammierer bin, bek
 verbessern.
 Diese Hilfe nahm ich immer dankend an. An all die Leute da draußen, die auch mal programmieren woll[t]en:
 Lasst euch nicht unterkriegen, wenn ihr euer Programm nicht mit dem ersten Versuch zum Laufen bringt oder wenn euch jemand sagt, dass euer
-Programmierstil nicht der beste ist.
-Fragt nach, wenn ihr Fragen haben. Es gibt keine dummen Fragen, es gibt nur dumme Antworten.
+Programmierstil nicht der Beste ist.
+Fragt nach, wenn ihr Fragen habt. Es gibt keine dummen Fragen, es gibt nur dumme Antworten.
 Danke!
 
 ## QuerysAutoClicker
