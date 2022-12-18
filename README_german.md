@@ -2,7 +2,7 @@
 
 # QuerysAutoClicker (QAC)
 
-- **[English version](https://github.com/getQueryString/QuerysAutoClicker/blob/master/README.md)**
+- **[English version](https://github.com/getQueryString/QuerysAutoClicker)**
 - [Unser QueryCommunity-Discord-Server](https://discord.gg/AeGFarvQyk)
 - [QuerysAutoClicker auf SourceForge](https://sourceforge.net/projects/querysautoclicker/)
 
